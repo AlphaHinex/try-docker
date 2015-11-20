@@ -8,7 +8,7 @@ WORKDIR $WEBAPP_HOME
 
 ENV WEBAPP_URL https://github.com/AlphaHinex/arsenal.git 
 
-RUN git clone "WEBAPP_URL"
+RUN git clone $WEBAPP_URL
 
 WORKDIR $WEBAPP_HOME/$WEBAPP_NAME
 
