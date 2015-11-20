@@ -12,4 +12,4 @@ RUN git clone $WEBAPP_URL
 
 WORKDIR $WEBAPP_HOME/$WEBAPP_NAME
 
-CMD gradlew build
+CMD ./gradlew build
