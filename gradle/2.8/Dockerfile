@@ -14,5 +14,6 @@ WORKDIR $WEBAPP_HOME/$WEBAPP_NAME
 RUN ./gradlew check
 
 CMD git pull
-CMD ./gradlew check 
-CMD python -m SimpleHTTPServer 8080 build/reports/tests/
+CMD ./gradlew clean check 
+WORKDIR $WEBAPP_HOME/$WEBAPP_NAME/build/reports/tests
+CMD python -m SimpleHTTPServer 8080
