@@ -16,5 +16,5 @@ RUN ./gradlew check
 CMD set -x \
         && git pull \
         && ./gradlew clean check \
-        && cd build.reports/test \
+        && cd build/reports/tests \
         && python -m SimpleHTTPServer 8080
