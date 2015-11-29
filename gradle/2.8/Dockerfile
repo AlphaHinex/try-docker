@@ -13,7 +13,8 @@ RUN git clone $WEBAPP_URL
 WORKDIR $WEBAPP_HOME/$WEBAPP_NAME
 RUN ./gradlew check
 
-CMD git pull
-CMD ./gradlew clean check 
-WORKDIR $WEBAPP_HOME/$WEBAPP_NAME/build/reports/tests
-CMD python -m SimpleHTTPServer 8080
+CMD set -x \
+        && git pull \
+        && ./gradlew clean check \
+        && cd build.reports/test \
+        && python -m SimpleHTTPServer 8080
