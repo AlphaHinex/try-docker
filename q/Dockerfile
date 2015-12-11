@@ -1,4 +1,4 @@
-FROM scratch
+FROM debian:jessie
 
 ENV WD /usr/local/x
 WORKDIR $WD
