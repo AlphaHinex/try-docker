@@ -9,4 +9,4 @@ ENV URL https://github.com/github/git-lfs/releases/download/v1.1.0/git-lfs-darwi
 
 WORKDIR $WD
 
-RUN curl -O $URL 
+RUN curl -fkSLO $URL 
