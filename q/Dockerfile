@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM buildpack-deps:jessie-curl
 
 ENV WD /usr/local/x
 WORKDIR $WD
