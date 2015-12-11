@@ -1,8 +1,12 @@
-FROM buildpack-deps:jessie-curl
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        curl \
+        scp
 
 ENV WD /usr/local/x
+ENV URL https://github.com/github/git-lfs/releases/download/v1.1.0/git-lfs-darwin-amd64-1.1.0.tar.gz
+
 WORKDIR $WD
 
-RUN curl -o flowplayer-3.2.1.swf http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf 
-
-CMD ls
+RUN curl -O $URL 
