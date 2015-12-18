@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         openssh-client 
 
 ENV WD /usr/local/x
-ENV URL https://github.com/github/git-lfs/releases/download/v1.1.0/git-lfs-darwin-amd64-1.1.0.tar.gz
+ENV URL http://screencasts.b0.upaiyun.com/podcasts/teahour_episode_78.m4a
 
 WORKDIR $WD
 
