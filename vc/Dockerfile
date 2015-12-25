@@ -1,7 +1,7 @@
 FROM ubuntu:wily
 MAINTAINER Alpha Hinex <AlphaHinex@gmail.com>
  
-RUN apt-get update && apt-get -y install ant git ffmpeg gpac libgpac-dev
+RUN apt-get update && apt-get -y install default-jdk ant git ffmpeg gpac libgpac-dev
 
 ENV BASE /usr/local
 WORKDIR $BASE
