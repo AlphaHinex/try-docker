@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         openssh-client 
 
 ENV WD /usr/local/x
-ENV URL https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/wro4j/wro4j-runner-1.6.3-jar-with-dependencies.jar 
+ENV URL https://mail.google.com/mail/u/0/s/?view=att&th=152aa71abd24abd9&attid=0.1.1&disp=attd&safe=1&zw 
 
 WORKDIR $WD
 
